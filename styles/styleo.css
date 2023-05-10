@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Gloria+Hallelujah&family=Rampart+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fasthand&family=Rampart+One&display=swap');
+ /* ini untuk clearing */
+ *, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+ul {
+    font-family: 'Concert One', cursive;
+    display: flex;
+    gap: 72px;
+    list-style: none;
+}
+.navbar {
+    background-color: #222;
+    /* color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  .navbar-brand a {
+    font-size: 24px;
+    color: rgb(222, 240, 243);
+    text-decoration: none;
+  }
+  
+  .navbar-brand a:hover {
+    color: #ffa0d7;
+  }
+  ul li a {
+      font-size: 26px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px;
+      transition: 0.5s ease-in-out;
+      filter: blur(0.4px);
+
+
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .navbar-brand {
+      margin-bottom: 10px;
+    }
+
+  }
+  
+.parallax {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.intro {
+    background-image: url('/gambar/bk6.jpg');
+    
+}
+.content {
+    background-image: url('/gambar/bk7.jpg');
+}
+.footer {
+    background-image: url('/gambar/bk10.jpg');
+}
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title {
+    font-size: 4em;
+    letter-spacing: 20px;
+    font-family: 'Rampart One', cursive;
+    color: black;
+}
+.fontkonten {
+  font-family:'Concert One', cursive;
+  font-size: 12mm;
+}
+
+h1 {
+  font-family: 'Fasthand', cursive;
+  font-size: 12mm;
+  color:rgb(253, 253, 2);
+}
+
+
+
+footer {
+    text-decoration:none;
+    position: none;
+    width: 100%;
+    bottom: 0;
+    /*ini buat bikin footer kebawah*/
+
+background-color: rgb(48, 1, 38);
+color: ghostwhite;
+padding-left: 10%;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 10%;
+
+}
+/* ======================================== */
+/* ini untuk bg hal. service */
+.bg-service {
+    background-color:#E6AEB1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hh2 {
+
+    direction: rtl;
+    font-family: fantasy;
+}
+
+

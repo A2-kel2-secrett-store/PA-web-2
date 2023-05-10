@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+ }
+
+.bdprm {
+    background-color:#E6AEB1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ebc3c5;
+    width: 210px;
+    padding: 20px;
+    margin: 30px;
+    justify-self: start;
+}
+
+.card:hover .c-content {
+    margin-top: -60px;
+}
+.card:hover .text-group {
+    top: 90px;
+    opacity: 1;
+}
+
+.card-cover {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    margin-top: -60px;
+    z-index: 10;
+    /* background-color: rgb(37, 125, 202); */
+    /* background-image: url('gambarbotol.jpg');
+    background-size:cover; */
+    box-shadow: 0 5px 10px rgb(230, 114, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    background-image: url('/gambar/serumpng.png');
+    background-size:cover;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.h2 {
+    background-image: url('/gambar/produk3.png');
+    background-size:cover;
+    width: 150px;
+    height: 150px;}
+
+.h3 {
+    background-image: url('/gambar/produk4.png');
+    background-size:cover;
+    width: 150px;
+    height: 150px;}
+.h4 {
+    background-image: url('/gambar/produk5.png');
+    background-size:cover;
+    width: 150px;
+    height: 150px;}
+.h5 {
+    background-image: url('/gambar/produk6.png');
+    background-size:cover;
+    width: 150px;
+    height: 150px;}
+
+.c-content {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end ;
+    flex-direction: column;
+    margin-top: -200px;
+    position: relative;
+    overflow: hidden;
+    transition: margin-top .3s ease-out;
+}
+
+.text-group {
+    position: absolute;
+    top: -80px;
+    opacity: 0;
+    transition: top .3s .3s ease-out;
+}
