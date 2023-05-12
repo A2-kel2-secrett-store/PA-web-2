@@ -1,4 +1,3 @@
-<!-- s -->
 <nav class="navbar">
   <div class="navbar-brand mx-auto container w-full flex items-center justify-between">
     <a class="font-bold" href="/home">SECRETT STORE

@@ -1,19 +1,28 @@
-<!-- s -->
-<?php require("../utils/auth-admin.php"); ?>
+<?php
+require("../utils/auth-admin.php");
+require "../database/connect.php";
+
+$sql = mysqli_query($connect,"SELECT COUNT(id) AS lenUsers FROM users WHERE role!='ADMIN'");
+$lenUsers = mysqli_fetch_row($sql);
+$sql = mysqli_query($connect,"SELECT COUNT(id) AS lenUsers FROM users WHERE role='VIP'");
+$lenUsersVip = mysqli_fetch_row($sql);
+$sql = mysqli_query($connect,"SELECT COUNT(id) AS lenPesanan FROM pembelian");
+$lenPesanan = mysqli_fetch_row($sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin</title>
-  <link rel="stylesheet" href="/styles/output.css">
-</head>
-
-<body>
-  <?php require("../components/sidebar-admin.php") ?>
-  <div class="p-4 sm:ml-64">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/styles/output.css">
+  </head>
+  
+  <body>
+    <?php require("../components/sidebar-admin.php") ?>
+    <div class="p-4 sm:ml-64">
     <main class=" pt-16 max-h-screen overflow-auto">
       <div class="px-6 py-8">
         <div class="max-w-4xl mx-auto">
@@ -46,20 +55,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="p-4 bg-yellow-100 rounded-xl text-gray-800">
-                    <div class="font-bold text-2xl leading-none" id="users">0</div>
+                  <a href="/admin/users/" class="p-4 bg-yellow-100 rounded-xl text-gray-800">
+                    <div class="font-bold text-2xl leading-none" id="users"><?= $lenUsers[0] ?></div>
                     <div class="mt-2">Users</div>
-                  </div>
+                  </a>
                   <div class="p-4 bg-yellow-100 rounded-xl text-gray-800">
-                    <div class="font-bold text-2xl leading-none" id="vip">0</div>
+                    <div class="font-bold text-2xl leading-none" id="vip"><?= $lenUsersVip[0] ?></div>
                     <div class="mt-2">VIP Users</div>
                   </div>
-                  <div class="col-span-2">
+                  <a href="/admin/purchase/" class="col-span-2">
                     <div class="p-4 bg-purple-100 rounded-xl text-gray-800">
                       <div class="font-bold text-xl leading-none">Pesanan</div>
-                      <div class="mt-2" id="purchases">0 Pesanan</div>
+                      <div class="mt-2" id="purchases"><?= $lenPesanan[0] ?> Pesanan</div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div>
@@ -79,7 +88,7 @@
                   </div>
                   <div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
                     <div class="flex justify-between">
-                      <div class="text-gray-400 text-xs">Persoanl</div>
+                      <div class="text-gray-400 text-xs">Personal</div>
                       <div class="text-gray-400 text-xs">7d</div>
                     </div>
                     <a href="javascript:void(0)" class="font-bold hover:text-yellow-800 hover:underline">Mudik</a>
@@ -105,7 +114,7 @@
     </main>
   </div>
   <script src="/scripts/cash.min.js"></script>
-  <script src="/admin/index.js"></script>
+  <!-- <script src="/admin/index.js"></script> -->
 </body>
 
 </html>

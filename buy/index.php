@@ -1,4 +1,3 @@
-<!-- s -->
 <?php require('../utils/auth.php') ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,6 +62,7 @@
     <script src="/scripts/cash.min.js"></script>
     <script>
       const email = "<?= $_SESSION['email'] ?>"
+      const role = "<?= $_SESSION['role'] ?>"
     </script>
     <script type="module" src="/buy/index.js"></script>
 </body>

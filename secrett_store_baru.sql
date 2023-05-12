@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2023 at 03:06 AM
+-- Generation Time: May 12, 2023 at 02:57 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -45,10 +45,12 @@ CREATE TABLE `pembelian` (
 
 INSERT INTO `pembelian` (`id`, `jumlah`, `nama`, `gambar`, `harga`, `total`, `status`, `id_pembeli`, `diskon`) VALUES
 (17, 1, 'Maybelline Fit Me Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png', 152083, 152083, 'Sukses', 12, 'false'),
-(18, 1, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 221548, 'Proses', 13, 'false'),
-(19, 1, 'Maybelline Face Studio Master Hi-Light Light Booster Blush ', 'https://d3t32hsnjxo7q6.cloudfront.net/i/e8c59b78ebeaec5c4b6aeba49a9ff0f6_ra,w158,h184_pa,w158,h184.png', 221548, 221548, 'Proses', 13, 'false'),
-(20, 2, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 443096, 'Proses', 13, 'false'),
-(21, 2, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 398787, 'Proses', 13, 'false');
+(21, 2, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 398787, 'Proses', 13, 'false'),
+(31, 2, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 443096, 'Proses', 13, 'false'),
+(32, 1, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 221548, 'Proses', 13, 'false'),
+(33, 2, 'Maybelline Dream Bouncy Blush', 'https://d3t32hsnjxo7q6.cloudfront.net/i/51eacb9efebbaee39399e65ffe3d9416_ra,w158,h184_pa,w158,h184.png', 177209, 354418, 'Sukses', 13, 'false'),
+(34, 3, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 598180, 'Proses', 13, 'false'),
+(35, 1, 'Maybelline Face Studio Master Hi-Light Light Booster Bronzer', 'https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png', 221548, 199393, 'Proses', 13, 'true');
 
 -- --------------------------------------------------------
 
@@ -79,7 +81,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `email`, `password`, `username`, `tipe_skincare`, `kategori`, `umur`, `gender`, `role`, `gambar`, `kondisi`, `scan_date`, `pengajuan`) VALUES
 (7, 'admin@gmail.com', '202cb962ac59075b964b07152d234b70', '', '', '', '', '', 'ADMIN', '/gambar/uranus.jpg', '', NULL, ''),
 (12, 'budi@gmail.com', '202cb962ac59075b964b07152d234b70', 'Budi', '', '', '', 'Laki-laki', 'MEMBER', '/gambar/placeholder.jpg', '', NULL, ''),
-(13, 'ridwal@gmail.com', '202cb962ac59075b964b07152d234b70', 'Ridwan', '', '', '', 'Laki-laki', 'MEMBER', '/gambar/placeholder.jpg', '', NULL, '');
+(13, 'ridwal@gmail.com', '202cb962ac59075b964b07152d234b70', 'Ridwan', '', '', '', 'Laki-laki', 'VIP', '/gambar/placeholder.jpg', '', NULL, 'Diterima'),
+(14, 'siffa@gmail.com', '202cb962ac59075b964b07152d234b70', 'Siffa', '', '', '', '', 'MEMBER', '/gambar/placeholder.jpg', '', NULL, '');
 
 --
 -- Indexes for dumped tables
@@ -106,13 +109,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `pembelian`
 --
 ALTER TABLE `pembelian`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables

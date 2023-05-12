@@ -1,4 +1,3 @@
-<!-- s -->
 <?php
 require("../utils/auth.php");
 require "../database/connect.php";

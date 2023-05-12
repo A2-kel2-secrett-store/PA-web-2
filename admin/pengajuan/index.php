@@ -1,9 +1,8 @@
-<!-- s -->
 <?php
 require("../../utils/auth-admin.php");
 require "../../database/connect.php";
 
-// Untuk button jadikan member..
+// Untuk button jadikan member
 if (isset($_GET['status'])) {
     $email = $_GET['email'];
     if ($_GET['status'] == 'Diterima') {
@@ -90,8 +89,7 @@ if (isset($_GET['status'])) {
                                             <button class="bg-red-600 text-white mt-1 px-3 py-1 rounded-lg"><a href="/admin/pengajuan/index.php?email=<?= $data['email'] ?>&status=Ditolak">Tolak</a></button>
                                         </td>
                                     </tr>
-                                <?php  $no++;
-                                } ?>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
