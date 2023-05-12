@@ -1,3 +1,4 @@
+// s
 const users = JSON.parse(localStorage.getItem('users') ?? '[]');
 $('#users').html(users.length);
 

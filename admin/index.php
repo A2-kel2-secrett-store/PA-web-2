@@ -1,3 +1,4 @@
+<!-- s -->
 <?php require("../utils/auth-admin.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
