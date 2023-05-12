@@ -89,7 +89,7 @@ if (isset($_GET['status'])) {
                                             <button class="bg-red-600 text-white mt-1 px-3 py-1 rounded-lg"><a href="/admin/pengajuan/index.php?email=<?= $data['email'] ?>&status=Ditolak">Tolak</a></button>
                                         </td>
                                     </tr>
-                                <?php $no++;
+                                <?php  $no++;
                                 } ?>
                             </tbody>
                         </table>

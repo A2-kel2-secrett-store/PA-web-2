@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$database = "secrett_store_baru"; 
+$database = "secrett_store"; 
 
 $connect = mysqli_connect($host, $user, $pass);
 if ($connect) {
