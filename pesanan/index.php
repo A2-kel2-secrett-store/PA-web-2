@@ -52,7 +52,6 @@ if (isset($_GET['id'])) {
               Status
             </th>
             <th scope="col" class="px-6 py-3">
-              Action
             </th>
           </tr>
         </thead>
@@ -96,7 +95,7 @@ if (isset($_GET['id'])) {
               <?php
               if ($data['status'] == "Proses") : ?>
                 <td class="px-6 py-4">
-                  <a href="/pesanan/index.php?id=<?= $data['id'] ?>" class="font-medium bg-gray-50 text-red-600 dark:text-red-500 hover:underline">Remove</a>
+                  <a href="/pesanan/index.php?id=<?= $data['id'] ?>" class="font-medium bg-gray-50 text-red-600 dark:text-red-500 hover:underline">Cancel</a>
                 </td>
               <?php else : ?>
                 <td class="px-6 py-4"></td>

@@ -20,7 +20,7 @@ if (isset($_GET['pengajuan'])) {
   <link rel="stylesheet" href="/styles/styleo.css">
   <link rel="stylesheet" href="/styles/service.css">
   <link rel="stylesheet" href="/styles/output.css">
-  <title>secrett.store_</title>
+  <title>Secrett Store</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@ if (isset($_GET['pengajuan'])) {
       <input value="<?= $user['username'] ?>" name="nama" required id="nama" type="text" class="mt-1 w-full block rounded-md border-gray-300 shadow-sm focus:border-pink-300 focus:ring focus:ring-pink-200 focus:ring-opacity-50" placeholder="">
     </label>
     <div aria-label="Gender">
-      <div class="text-gr font-semibold">Jenis Kelamain</div>
+      <div class="text-gr font-semibold">Jenis Kelamin</div>
       <div class="mt-2 flex items-center justify-start">
         <label class="mb-4 mr-4 inline-block" for="boy">
           <input value="Laki-laki" <?php if ($user['gender'] == "Laki-laki") echo 'checked'; ?> type="radio" id="boy" name="gender" class="rounded-full border-gray-300 text-pink-600 shadow-sm focus:border-pink-300 focus:ring focus:ring-offset-0 focus:ring-pink-200 focus:ring-opacity-50" />
@@ -91,14 +91,14 @@ if (isset($_GET['pengajuan'])) {
       </select>
     </label>
     <label class="block mb-4" for="cond">
-      <span class="text-gr font-semibold">Kondisi Kulit Sekarang</span>
+      <span class="text-gr font-semibold">Jelaskan Kondisi Kulit</span>
       <textarea rows="4" required name="cond" id="cond" class="mt-1 w-full block rounded-md border-gray-300 shadow-sm focus:border-pink-300 focus:ring focus:ring-pink-200 focus:ring-opacity-50" placeholder="Jelaskan Secara Rinci Permasalahannya"><?= $user['kondisi'] ?></textarea>
     </label>
     <label class="block mb-4" for="email">
       <span class="text-gr font-semibold">Email</span>
       <input disabled name="email" required id="email" type="text" class="mt-1 w-full block rounded-md border-gray-300 shadow-sm focus:border-pink-300 focus:ring focus:ring-pink-200 focus:ring-opacity-50 disabled:text-gray-400 disabled:cursor-not-allowed" placeholder="" value="<?= $user['email'] ?>">
     </label>
-    <span class="text-gr font-semibold">Foto Profile</span>
+    <span class="text-gr font-semibold">Foto Profil</span>
     <div class="relative w-max mb-4">
       <img id="profile-img" class="h-52" src="<?= $user['gambar'] == '' ? '/gambar/placeholder.jpg' : $user['gambar'] ?>" />
       <label class="block mb-4 absolute top-1 right-2" for="image">
