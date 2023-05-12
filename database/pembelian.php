@@ -1,3 +1,4 @@
+<!-- s -->
 <?php // untuk pembelian pada halaman member
 require "connect.php";
 session_start();

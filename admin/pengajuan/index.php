@@ -1,3 +1,4 @@
+<!-- s -->
 <?php
 require("../../utils/auth-admin.php");
 require "../../database/connect.php";
