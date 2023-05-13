@@ -30,3 +30,15 @@ diskon sebesar diskon 10%
 - Bisa melakukan request untuk menjadi VIP
 
 - Sorting table menggunakan library [table-sortable](https://www.cssscript.com/html-table-sortable/)
+
+# TUTORIAL PENGGUNAAN WEBSITE
+- 
+> Admin
+
+
+
+> Member Biasa & VIP
+
+
+
+
