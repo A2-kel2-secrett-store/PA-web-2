@@ -1,4 +1,3 @@
-KASIHTAU KALO MAU PUSH SM PULL 
 # Project Akhir Web - Kelas A2 Kelompok 2
 
 > List anggota : 
@@ -9,7 +8,6 @@ KASIHTAU KALO MAU PUSH SM PULL
 ## Tema : Toko Kosmetik
 
 ## Akun Admin 
-(kalo mo ubah gpp ges caranya sign up user > phpmyadmin > klik 2 kali di role diubah jd admin)
 ```
 email    : admin@gmail.com
 password : 123
